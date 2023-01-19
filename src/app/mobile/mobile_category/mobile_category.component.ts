@@ -2,13 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-category',
-  templateUrl: './category.component.html',
-  styleUrls: ['./category.component.scss']
+  templateUrl: './mobile_category.component.html',
+  styleUrls: ['./mobile_category.component.scss']
 })
-export class CategoryComponent {
+export class MobileCategoryComponent {
 
   
-
   imagePath1 = '../../../assets/images/oils.png'
   imagePath2 = '../../../assets/images/noodles.png'
   imagePath3 = '../../../assets/images/toss.png'

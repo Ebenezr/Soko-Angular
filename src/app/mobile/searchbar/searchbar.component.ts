@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./searchbar.component.scss']
 })
 export class SearchbarComponent {
+  searchTerm: string ;
+
+  constructor() {
+    this.searchTerm = '';
+}
+
 
 }

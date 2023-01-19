@@ -10,18 +10,22 @@ import { MatListModule } from '@angular/material/list';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { AdvertsComponent } from './adverts/adverts.component';
-import { CategoryComponent } from './category/category.component';
-import { ProductsComponent } from './products/products.component';
+import { MobileCategoryComponent } from './mobile_category/mobile_category.component';
+import { MobileProductsComponent } from './mobile_products/mobile_products.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MobileFooterComponent } from './mobile-footer/mobile-footer.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 
 
 
 const routes: Routes = [
   { path: 'home', component: MobileHomeComponent },
-  { path: 'products', component: ProductsComponent },
+  { path: 'products', component: MobileProductsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
@@ -31,8 +35,9 @@ const routes: Routes = [
     MobileHomeComponent,
     SearchbarComponent,
     AdvertsComponent,
-    CategoryComponent,
-    ProductsComponent
+    MobileCategoryComponent,
+    MobileProductsComponent,
+    MobileFooterComponent
   ],
   imports: [
     RouterModule.forChild(routes),
@@ -45,7 +50,10 @@ const routes: Routes = [
     MatListModule,
     MatCardModule,
     MatDividerModule,
-    MatGridListModule
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ]
 })
 export class MobileModule { }

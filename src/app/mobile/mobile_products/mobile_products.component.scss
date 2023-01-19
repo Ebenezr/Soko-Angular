@@ -1,3 +1,4 @@
+
 .prod-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -13,17 +14,40 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid tomato;
+        
         .prod-image{
-            
             // background-image: url('../../../assets/images/rhapso.png');
             // background-size: cover;   
-
             img {
-            
                 width: 100%; /* Make the images fill the entire card */
                 height: 100%;
             }
+        }
+        .prod-name{
+            font-weight: lighter;
+            font-size: medium;
+        }
+        .prod-desc{
+            color: gray;
+            font-size: small;
+        }
+        .prod-price{
+            color: #010F8C;
+        }
+        .prod-cart{
+            border-radius: 15px;
+            border: 1px solid #010F8C;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2px 20px;
+            margin: 8px;
+            span{
+                padding: 5px;
+                cursor: pointer;
+            }
+            
+        
         }
     }
 

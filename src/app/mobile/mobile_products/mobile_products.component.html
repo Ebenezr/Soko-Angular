@@ -2,7 +2,7 @@
     <h3>Products</h3>
     <div class="prod-container">
 
-        <div id="prod-card">
+        <div class="prod-card">
             <div class="prod-image">
                 <img mat-card-image [src]="imagePath1">
             </div>
@@ -16,11 +16,13 @@
                 <p>Price</p>
             </div>
             <div class="prod-cart">
-                <p>button</p>
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
             </div>
         </div>
 
-        <div id="prod-card">
+        <div class="prod-card">
             <div class="prod-image">
                 <img mat-card-image [src]="imagePath2">
             </div>
@@ -34,7 +36,9 @@
                 <p>Price</p>
             </div>
             <div class="prod-cart">
-                <p>button</p>
+                <span (click)="decrement()">-</span>
+                <span>{{counter}}</span>
+                <span  (click)="increment()">+</span>
             </div>
         </div>
     </div>

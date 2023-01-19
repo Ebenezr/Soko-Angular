@@ -1,3 +1,19 @@
 <form>
-    <input type="text" name="search" class="search" placeholder="Search category" >
+    <!-- <input type="text" name="search" class="search" placeholder="Search category" > -->
+      <input class="search" matInput placeholder="Search category" name="searchInput" type="search" [disabled]="false" [(ngModel)]="searchTerm">
 </form>
+
+
+
+
+
+
+<!-- <form  >
+    <mat-form-field>
+      <input class="search" matInput placeholder="Search" name="searchInput" type="search" [disabled]="false" [(ngModel)]="searchTerm">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+</form> -->
+  
+
+  

@@ -1,6 +1,3 @@
-
-
-
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -24,7 +21,7 @@
               <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
             <span class="mine">
-              <img mat-card-image [src]="imagePath5">
+              <div class="company"><img mat-card-image [src]="imagePath5"></div>
             </span>
           </mat-toolbar>
         <router-outlet> </router-outlet>
