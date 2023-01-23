@@ -1,48 +1,46 @@
-.cat-main{
-    margin-bottom: 50px;
-}
 .Cat-container{
-    display: grid;
-    grid-template-columns: auto  auto auto;
-    gap:10px;
-    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
     .cat-card{
-        &:hover{
-            p{
-                color: #010F8C;
-            }
-            .img-cont{
-                border: 2px solid #010F8C ;
-            }
-        }
-        display: flex;
-        justify-content: space-between;
+        background-color: #303030 ;
+        border: none;
+        display:flex;
         flex-direction: column;
-        .img-cont {
-            background-color: beige;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            .cat-img {
-                
-                img {
-                    height: 80px;
-                    width: 100px;
-                    background-size: cover;
-                }
-            }
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        box-shadow: none;
+
+        img{
+            background-color : white;
+           
+            height: 80px;
+            width: 80px;
+            margin-bottom: 10px;
         }
+       
+        // .first-image {
+        //     border: 3px solid red;
+        //     background-image: url('../../../assets/images/oils.png');
+        //     background-size: cover;
+        // }
+        // .second-image {
+        //     background-image: url('../../../assets/images/noodles.png');
+        //     background-size: cover;
+        // }
+        // .third-image {
+        //     background-image: url('../../../assets/images/toss.png');
+        //     background-size: cover;
+        // }
         
-        .cat-footer{
-            text-align: center;
-            p{
-                color: white;
-                font-size: 0.9em;
-            }
-        }
+
     }
+    
+
+    
 }
 
 

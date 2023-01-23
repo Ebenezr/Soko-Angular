@@ -18,16 +18,13 @@
  
   .myContent{
     padding: 20px;
-    border: 1px solid teal;
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: space-between; */
+
   }
  
   
   .company {
     height: 180px;
-    /* width: 150px; */
+
   
   }
   img{

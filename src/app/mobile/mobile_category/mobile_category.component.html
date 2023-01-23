@@ -1,47 +1,31 @@
-<div class="cat-main">
-    <h3>Category</h3>
-    <div class="Cat-container">
-        <div class="cat-card">
-            
-            <div class="img-cont">
-              <div class="cat-img">
-                  <img mat-card-image [src]="imagePath1">
-              </div>
-            </div>
 
-            <div class="cat-footer">
-                <p>Noodles</p>
-            </div>
-        </div>
+<div class="Cat-container">
 
-        <div class="cat-card">
-          <div class="img-cont">
-            <div class="cat-img">
-                <img mat-card-image [src]="imagePath2">
-            </div>
-          </div>
-            <div class="cat-footer">
-                <p>Vegetable oils</p>
-            </div>
-        </div>
-        <div class="cat-card">
-          <div class="img-cont">
-            <div class="cat-img">
-                <img mat-card-image [src]="imagePath3">
-            </div>
-          </div>
-            <div class="cat-footer">
-                <p>Home care</p>
-            </div>
-        </div>
-    </div>
+  <mat-card class="cat-card">
+    <!-- <div mat-card-avatar class="first-image"></div> -->
+    <img mat-card-image [src]="imagePath1" alt="Noodles">
+    <mat-card-footer>
+      <p>Noodles</p>
+    </mat-card-footer>
+  </mat-card>
+
+  <mat-card class="cat-card">
+    <!-- <div  mat-card-avatar class="second-image"></div> -->
+    <img mat-card-image [src]="imagePath2" alt="Vegetable Oils">
+    <mat-card-footer>
+      <p>Vegetable Oils</p>
+    </mat-card-footer>
+  </mat-card>
+
+  <mat-card class="cat-card">
+    <!-- <div mat-card-avatar class="third-image"></div> -->
+    <img mat-card-image [src]="imagePath3" alt="Home care">
+    <mat-card-footer>
+      <p>Home care</p>
+    </mat-card-footer>
+  </mat-card>
+
 </div>
-
-
-
-
-
-
 
 
 

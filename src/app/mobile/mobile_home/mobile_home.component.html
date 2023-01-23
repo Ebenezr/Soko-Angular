@@ -2,11 +2,29 @@
 <!-- Add Content Here -->
 <div class="myContent">
   <router-outlet> </router-outlet>
-  <app-searchbar></app-searchbar>
+  <form>
+    <app-searchbar></app-searchbar>
+  </form>
   <app-adverts></app-adverts>
-  <app-category></app-category>
-  <app-mobile_products></app-mobile_products>
-  <app-mobile-footer></app-mobile-footer>
+
+  
+
+  <div class="cat-main">
+    <h3>Category</h3>
+    <app-category></app-category>
+  </div>
+
+  <div class="prod-main">
+    <h3>Products</h3>
+    <app-mobile_products></app-mobile_products>
+  </div>
+  
+  <div class="footer">
+    <app-mobile-footer></app-mobile-footer>
+  </div>
+  
+
+  
 </div>
 
 
