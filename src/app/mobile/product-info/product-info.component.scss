@@ -1,0 +1,40 @@
+.top-nav{
+    border: 1px solid green;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+mat-icon{
+    font-size: 2em;
+    color: white;
+}
+.product-image{
+    border: 1px solid red;
+    img{
+        height: 500px;
+        width:500px
+    }
+}
+.details{
+    .icon-container {
+        display: flex;
+        align-items: center;
+    }
+    h3{
+        color: #010F8C;
+    } 
+}
+
+.descrP{
+    h2{
+        font-weight: bold;
+    }
+}
+.carT{
+    button{
+        background-color: #010F8C;
+        border: none;
+        color: white;
+        padding: 5px 15px;
+    }
+}
