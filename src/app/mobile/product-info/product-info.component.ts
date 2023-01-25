@@ -7,24 +7,26 @@ import { Component } from '@angular/core';
 })
 export class ProductInfoComponent {
   imagePath1 = '../../../assets/images/rhapso.png'
-  ratingRange: number[] = [2,4];
+  rating: number = 4.5;
+
+  // ratingRange: number[] = [2,4];
 
   ngOnInit() {
-    this.ratingRange = Array(5).fill(0).map((x, i) => i + 1);
+    
   }
 
-  rating = 5
+  
 
 
-  getRatingIcon(i: number, rating: number) {
-    if (i + 0.5 <= rating) {
-      return 'star';
-    } else if (i < rating) {
-      return 'star_half';
-    } else {
-      return 'star_border';
-    }
-  }
+  // getRatingIcon(i: number, rating: number) {
+  //   if (i + 0.5 <= rating) {
+  //     return 'star';
+  //   } else if (i < rating) {
+  //     return 'star_half';
+  //   } else {
+  //     return 'star_border';
+  //   }
+  // }
   
 
 }

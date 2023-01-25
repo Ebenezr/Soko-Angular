@@ -20,6 +20,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { ProductInfoComponent } from './product-info/product-info.component';
+import { MobileCartComponent } from './mobile-cart/mobile-cart.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 
@@ -28,6 +30,7 @@ const routes: Routes = [
   { path: 'home', component: MobileHomeComponent },
   { path: 'products', component: MobileProductsComponent },
   { path: 'item', component: ProductInfoComponent }, // temporary - change to id after design
+  {path: 'cart', component: MobileCartComponent}, //temporary
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
@@ -40,7 +43,8 @@ const routes: Routes = [
     MobileCategoryComponent,
     MobileProductsComponent,
     MobileFooterComponent,
-    ProductInfoComponent
+    ProductInfoComponent,
+    MobileCartComponent
   ],
   imports: [
     RouterModule.forChild(routes),
@@ -56,7 +60,8 @@ const routes: Routes = [
     MatGridListModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatCheckboxModule
   ]
 })
 export class MobileModule { }

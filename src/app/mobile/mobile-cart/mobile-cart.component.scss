@@ -1,0 +1,35 @@
+.Title{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    
+
+    h2{
+        margin-left: 30px;
+    }
+}
+.cart-container{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+}
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+    margin-bottom: 10px;
+    .cart-card{
+        background-color: white;
+        box-shadow: none;
+        color: black;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        img{
+            height: 80px;
+            width: 80px;
+        }
+    }
+}
