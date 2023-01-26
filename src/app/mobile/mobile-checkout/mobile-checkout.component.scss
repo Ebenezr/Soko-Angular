@@ -1,0 +1,34 @@
+.Title{
+    display: flex;
+    padding: 10px;
+
+    mat-icon{
+        flex: 1;
+        justify-content: flex-start;
+        color: #010F8C;
+    }
+
+    h2{
+        flex: 1;
+        justify-content: center;
+    
+    }
+
+}
+
+.Order-details{
+    margin: 0 auto;
+    .example-form {
+        border: 1px solid red;
+        max-width: 500px;
+        width: 100%;
+        color: white;
+    }
+    .example-full-width {
+        width: 100%;
+    }   
+    
+
+
+      
+}
