@@ -12,6 +12,8 @@ interface Location {
   styleUrls: ['./mobile-checkout.component.scss']
 })
 export class MobileCheckoutComponent {
+  imagePath1 = '../../../assets/images/mpesa.png'
+
 
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 

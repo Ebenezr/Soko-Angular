@@ -5,7 +5,7 @@
     mat-icon{
         flex: 1;
         justify-content: flex-start;
-        color: #010F8C;
+        color: white;
     }
 
     h2{
@@ -18,17 +18,81 @@
 
 .Order-details{
     margin: 0 auto;
+    padding: 20px;
+    width: 70%;
+    
     .example-form {
-        border: 1px solid red;
+        margin: 0 auto;
         max-width: 500px;
         width: 100%;
-        color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .test{
+            color: gainsboro;
+            display: block;
+            font-weight: lighter;
+            font-size: 1.5em;
+        }
+        .example-full-width {
+            margin-top: 20px;
+            width: 100%;
+            // border: 1px solid yellow;
+        }  
+
+    
     }
-    .example-full-width {
-        width: 100%;
-    }   
+    
     
 
 
       
 }
+.payment{
+    margin: 0 auto;
+    background-color: black;
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    img{
+        margin: 0 auto;
+        height: 50px;
+        width: 80px;
+    }
+    input{
+        padding: 8px 15px;
+        
+    }
+}
+.pay{
+    margin: 0 auto;
+    padding: 20px;
+    width: 30%;
+    button{
+        background-color: #010F8C;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+}
+// .example-card{
+//     margin: 0 auto;
+//     background-color: black;
+//     height:30vh;
+//     width: 30%;
+//     img{
+//         margin: 0 auto;
+//         height: 50px;
+//         width: 80px;
+//     }
+//     mat-card-header{
+//         margin: 0 auto;
+//     }
+//     .mpesa-no{
+//         margin-top: 10px;
+//     }
+// }
