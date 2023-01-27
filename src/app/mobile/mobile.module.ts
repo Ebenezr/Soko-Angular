@@ -25,6 +25,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MobileCheckoutComponent } from './mobile-checkout/mobile-checkout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { MobileSuccessComponent } from './mobile-success/mobile-success.component';
 
 
 
@@ -34,6 +35,8 @@ const routes: Routes = [
   { path: 'item', component: ProductInfoComponent }, // temporary - change to id after design
   {path: 'cart', component: MobileCartComponent}, //temporary
   {path: 'order', component: MobileCheckoutComponent}, //temporary
+  {path: 'sucess', component: MobileSuccessComponent}, //temporary
+
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
@@ -48,7 +51,8 @@ const routes: Routes = [
     MobileFooterComponent,
     ProductInfoComponent,
     MobileCartComponent,
-    MobileCheckoutComponent
+    MobileCheckoutComponent,
+    MobileSuccessComponent
   ],
   imports: [
     RouterModule.forChild(routes),
