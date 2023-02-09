@@ -1,5 +1,7 @@
 <div class="Title">
-    <mat-icon>arrow_back</mat-icon>
+    <a [routerLink]="['/mobile/cart']">
+      <mat-icon>arrow_back</mat-icon>
+    </a>
     <h2>Checkout</h2>
 </div>
 
@@ -12,7 +14,7 @@
   
         <mat-form-field class="example-full-width">
             <mat-label>Full Name</mat-label>
-            <input matInput placeholder="Ex. John" value="john">
+            <input matInput placeholder="Ex. John" value="John Doe">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
@@ -35,7 +37,7 @@
 
         <mat-form-field class="example-full-width">
             <mat-label><Address></Address></mat-label>
-            <input matInput placeholder="Ex. 100 Main St" value="address">
+            <input matInput placeholder="Ex. 100 Main St" value="Address">
         </mat-form-field>
 
         <mat-form-field appearance="fill">

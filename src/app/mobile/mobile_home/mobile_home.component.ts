@@ -6,7 +6,7 @@ import { map, shareReplay } from 'rxjs/operators';
 @Component({
   selector: 'app-mobile_home',
   templateUrl: './mobile_home.component.html',
-  styleUrls: ['./mobile_home.component.css']
+  styleUrls: ['./mobile_home.component.scss']
 })
 export class MobileHomeComponent {
 

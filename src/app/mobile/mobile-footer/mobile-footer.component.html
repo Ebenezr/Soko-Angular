@@ -1,14 +1,21 @@
 <mat-grid-list cols="3" rowHeight="30px">
     <mat-grid-tile>
-        <mat-icon>home</mat-icon>
+        <a [routerLink]="['/mobile']">
+            <mat-icon>home</mat-icon>
+        </a>
     </mat-grid-tile>
     <mat-grid-tile>
-        <mat-icon>shopping_cart</mat-icon>
+        <a [routerLink]="['/mobile/cart']">
+            <mat-icon>shopping_cart</mat-icon>
+        </a>
     </mat-grid-tile>
     <mat-grid-tile>
-        <mat-icon>favorite</mat-icon>
+        <a [routerLink]="['/mobile/favorites']">
+            <mat-icon>favorite</mat-icon>
+        </a>
     </mat-grid-tile>
 </mat-grid-list>
+
 
 
 

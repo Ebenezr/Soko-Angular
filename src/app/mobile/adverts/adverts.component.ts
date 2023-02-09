@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AdvertsComponent {
   imagePath1 = '../../../assets/images/cooking-oils-removebg-preview.png'
+
+  showDiv: boolean = true
+
+  close(){
+    this.showDiv = !this.showDiv;
+  }
 }

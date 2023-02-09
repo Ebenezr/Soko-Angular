@@ -1,16 +1,17 @@
 .Title{
     display: flex;
-    padding: 10px;
+    flex-direction: row;
+    padding: 20px;
+
 
     mat-icon{
-        flex: 1;
-        justify-content: flex-start;
+        color: #303F9F;
+        font-size: 1.8em;
     }
 
     h2{
-        flex: 1;
-        justify-content: center;
-    
+        color: #303F9F;
+        margin: auto;
     }
 }
 .cart-container{
@@ -47,7 +48,7 @@
             background-color: white;
             padding: 15px 20px;
             border-radius: 10px;
-            border: 1px solid #010F8C;
+            border: 1px solid #303F9F;
         }
     }
     button{
@@ -55,7 +56,7 @@
         border: none;
         border-radius: 5px;
         padding: 15px;
-        background-color: #010F8C;
+        background-color: #303F9F;
         color: white;
     }
 }
@@ -68,12 +69,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 10px;
         p{
-            color: white;
+            color: black;
         }
-        span{
-            color: #010F8C;
+        h4{
+            color: #303F9F;
         }
 
     }
@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #010F8C;
+    background-color:  #303F9F;
     border-radius: 10px;
     border: none;
     padding: 10px;
@@ -93,13 +93,21 @@
     .price-checkout{
         display: flex;
         flex-direction: column;
+        align-items: center;
         color: white;
+        padding: 5px;
     }
-    button{
-        background-color: white;
-        padding: 10px;
-        color: #010F8C;
-        border-radius: 10px;
-        border: none;
+    .btn-checkout{
+        margin: auto;
+        button{
+            background-color: white;
+            padding: 10px;
+            color: #303F9F;
+            border-radius: 10px;
+            border: none;
+        }
+
     }
+
+   
 }

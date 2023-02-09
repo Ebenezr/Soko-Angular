@@ -1,10 +1,13 @@
-<div class="admain">
+<div class="admain" [ngClass]="{'admain': showDiv, 'second': !showDiv}">
     <div class="adImage">
         <img mat-card-image [src]="imagePath1">
     </div>
     <div class="adDescription">
         <p>Exclusive Offer!</p>
         <p>Order now to get 30% off</p>
+    </div>
+    <div  class="close" (click)="close()">
+        <mat-icon>close</mat-icon>
     </div>
 
 </div>

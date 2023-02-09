@@ -1,16 +1,17 @@
+.conta{
+  height: 60vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
 mat-grid-tile {
     color: black;
     background-color: white;
-    border: none;
-   
+    // border: none;
     .cat-card{
-      background-color: white;
       box-shadow: none;
       padding: 20px;
-      height: 280px;
     }
     img{
-      
       height: 100px;
       width: 100px;
       margin-bottom: 10px;

@@ -1,38 +1,23 @@
-<mat-grid-list cols="2" rowHeight="280px">
-
-    <mat-grid-tile>
+<div class="conta">
+  <mat-grid-list cols="2" rowHeight="280px">
+    <mat-grid-tile *ngFor="let product of products ;let i = index">
         <mat-card class="cat-card">
             <img mat-card-image [src]="imagePath1" alt="Noodles">
             <mat-card-content>
-                <mat-card-title>Rhapso</mat-card-title>
-                <p>Size: 5LTR</p>
-                <p> Ksh 500.00</p>
+                <mat-card-title>{{product.name}}</mat-card-title>
+                <p>{{product.size}}</p>
+                <p>{{product.price}}</p>
               </mat-card-content>
               <mat-card-actions align="start">
-                <span (click)="decrement()">-</span>
-                <span>{{counter}}</span>
-                <span  (click)="increment()">+</span>
+                <span (click)="decrement(i)">-</span>
+                <span>{{product.ordered_items}}</span>
+                <span  (click)="increment(i)">+</span>
               </mat-card-actions>
           </mat-card>
     </mat-grid-tile>
-
-    <mat-grid-tile>
-        <mat-card class="cat-card">
-            <img mat-card-image [src]="imagePath2" alt="postman">
-            <mat-card-content>
-                <mat-card-title>Postman</mat-card-title>
-                <p>Size: 5LTR</p>
-                <p> Ksh 520.00 </p>
-              </mat-card-content>
-              <mat-card-actions align="start">
-                <span (click)="decrement()">-</span>
-                <span>{{counter}}</span>
-                <span  (click)="increment()">+</span>
-              </mat-card-actions>
-          </mat-card>
-    </mat-grid-tile>
-    
   </mat-grid-list>
+</div>
+
 
 
 

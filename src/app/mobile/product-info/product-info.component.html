@@ -1,7 +1,8 @@
 <div class="item-container">
     <div class="top-nav">
-        <mat-icon>arrow_back</mat-icon>
-        <mat-icon>favorite</mat-icon>
+        <a [routerLink]="['/mobile']">
+            <mat-icon>arrow_back</mat-icon>
+        </a>
     </div>
     <div class=product-image>
         <img  [src]="imagePath1" alt="Noodles">
@@ -9,7 +10,6 @@
     
     <div class="details">
         <h4>Noodles</h4>
-        
         <h5>Size: 5LTR</h5>
         <h3>KES 500.00</h3>
     </div>
@@ -23,4 +23,8 @@
             Add to cart
         </button>
     </div>
+    <div class="footer">
+        <app-mobile-footer></app-mobile-footer>
+      </div>
+
 </div>

@@ -1,5 +1,7 @@
 <div class="Title">
-    <mat-icon>arrow_back</mat-icon>
+    <a [routerLink]="['/mobile']">
+        <mat-icon>arrow_back</mat-icon>
+    </a>
     <h2>My Cart</h2>
 </div>
 
@@ -53,21 +55,21 @@
 <div class="pricing">
     <div class="sub-price">
         <p>Sub Total</p>
-        <span>Kes 476</span>
+        <h4>Kes 476</h4>
     </div>
     <div class="sub-price">
         <p>VAT</p>
-        <span>Kes 4.0</span>
+        <h4>Kes 7.6</h4>
     </div>
 </div>
 
 
 <div class="checkout">
     <div class="price-checkout">
-        <p>Total</p>
-        <span>KES 480</span>
+        <p>Total:</p>
+        <h4>KES 480</h4>
     </div>
-    <div>
+    <div class="btn-checkout">
         <button>Proceed to Checkout</button>
     </div>
 </div>
