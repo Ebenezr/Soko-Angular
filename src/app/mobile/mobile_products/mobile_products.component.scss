@@ -2,11 +2,12 @@
   height: 60vh;
   overflow: hidden;
   overflow-y: auto;
+  
 }
+
 mat-grid-tile {
     color: black;
     background-color: white;
-    // border: none;
     .cat-card{
       box-shadow: none;
       padding: 20px;

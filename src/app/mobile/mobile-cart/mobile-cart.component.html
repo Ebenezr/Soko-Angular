@@ -1,75 +1,76 @@
-<div class="Title">
-    <a [routerLink]="['/mobile']">
-        <mat-icon>arrow_back</mat-icon>
-    </a>
-    <h2>My Cart</h2>
-</div>
-
-<div class="cart-container">
-    <div class="cart-item">
-        <mat-checkbox></mat-checkbox>
-        <mat-card class="cart-card">
-            <img mat-card-image [src]="imagePath1" alt="Noodles">
-            <mat-card-content>
-                <mat-card-title>Rhapso</mat-card-title>
-                <p>Size: 5LTR</p>
-                <p> Ksh 500.00</p>
-            </mat-card-content>
-        </mat-card>
-        <mat-icon mat-icon-button (click)="delete()">delete</mat-icon>
+<div class="main-cArt">
+    <div class="Title">
+        <a [routerLink]="['/mobile']">
+            <mat-icon>arrow_back</mat-icon>
+        </a>
+        <h2>My Cart</h2>
+        <p >Remove 3</p>
     </div>
-
-    <div class="cart-item">
-        <mat-checkbox></mat-checkbox>
-        <mat-card class="cart-card">
-            <img mat-card-image [src]="imagePath2" alt="Noodles">
-            <mat-card-content>
-                <mat-card-title>Rhapso</mat-card-title>
-                <p>Size: 5LTR</p>
-                <p> Ksh 500.00</p>
-            </mat-card-content>
-        </mat-card>
-        <mat-icon mat-icon-button (click)="delete()">delete</mat-icon>
+    
+    <div class="cart-container">
+        <div class="cart-item">
+            <mat-checkbox></mat-checkbox>
+            <mat-card class="cart-card">
+                <img mat-card-image [src]="imagePath1" alt="Noodles">
+                <mat-card-content>
+                    <mat-card-title>Rhapso</mat-card-title>
+                    <p>Size: 5LTR</p>
+                    <p> Ksh 500.00</p>
+                </mat-card-content>
+                <mat-icon>close</mat-icon>
+            </mat-card>
+            
+        </div>
+    
+        <div class="cart-item">
+            <mat-checkbox></mat-checkbox>
+            <mat-card class="cart-card">
+                <img mat-card-image [src]="imagePath2" alt="Noodles">
+                <mat-card-content>
+                    <mat-card-title>Rhapso</mat-card-title>
+                    <p>Size: 5LTR</p>
+                    <p> Ksh 500.00</p>
+                </mat-card-content>
+                <mat-icon>close</mat-icon>
+            </mat-card>
+            
+        </div>
+        <div class="cart-item">
+            <mat-checkbox></mat-checkbox>
+            <mat-card class="cart-card">
+                <img mat-card-image [src]="imagePath3" alt="Noodles">
+                <mat-card-content>
+                    <mat-card-title>Toss</mat-card-title>
+                    <p>Size: 5LTR</p>
+                    <p> Ksh 500.00</p>
+                </mat-card-content>
+                <mat-icon>close</mat-icon>
+            </mat-card>
+            
+        </div>
     </div>
-    <div class="cart-item">
-        <mat-checkbox></mat-checkbox>
-        <mat-card class="cart-card">
-            <img mat-card-image [src]="imagePath3" alt="Noodles">
-            <mat-card-content>
-                <mat-card-title>Toss</mat-card-title>
-                <p>Size: 5LTR</p>
-                <p> Ksh 500.00</p>
-            </mat-card-content>
-        </mat-card>
-        <mat-icon mat-icon-button (click)="delete()">delete</mat-icon>
+    
+    
+    
+    <div class="pricing">
+        <div class="sub-price">
+            <p>Sub Total</p>
+            <h4>Kes 476</h4>
+        </div>
+        <div class="sub-price">
+            <p>VAT</p>
+            <h4>Kes 7.6</h4>
+        </div>
     </div>
-</div>
-
-<div class="promo">
-    <form>
-        <input type="text" name="promo" placeholder="Enter Promo Code">
-    </form>
-    <button>Apply</button>
-</div>
-
-<div class="pricing">
-    <div class="sub-price">
-        <p>Sub Total</p>
-        <h4>Kes 476</h4>
-    </div>
-    <div class="sub-price">
-        <p>VAT</p>
-        <h4>Kes 7.6</h4>
-    </div>
-</div>
-
-
-<div class="checkout">
-    <div class="price-checkout">
-        <p>Total:</p>
-        <h4>KES 480</h4>
-    </div>
-    <div class="btn-checkout">
-        <button>Proceed to Checkout</button>
+    
+    
+    <div class="checkout">
+        <div class="price-checkout">
+            <p>Total:</p>
+            <h4>KES 480</h4>
+        </div>
+        <div class="btn-checkout">
+            <button>Proceed to Checkout</button>
+        </div>
     </div>
 </div>

@@ -1,3 +1,6 @@
+.main-cArt{
+    background-color: #f6f1ee;
+}
 .Title{
     display: flex;
     flex-direction: row;
@@ -5,13 +8,18 @@
 
 
     mat-icon{
-        color: #303F9F;
+        color: black;
         font-size: 1.8em;
     }
 
     h2{
-        color: #303F9F;
+        color: black;
         margin: auto;
+    }
+    p{
+        color: rgb(222, 28, 28);
+        font-weight: 500;
+
     }
 }
 .cart-container{
@@ -23,43 +31,30 @@
 .cart-item{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
     margin-bottom: 20px;
+    
     .cart-card{
+        margin: 10px;
         background-color: white;
-        box-shadow: none;
+        box-shadow: 0px 10px rgb(221, 219, 219);
         color: black;
-        height: 100px;
+        height: 130px;
+        width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        mat-icon{
+            background-color: gray;
+            color: white;
+        }
         img{
             height: 80px;
             width: 80px;
         }
     }
 }
-.promo{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    form{
-        
-        input{
-            background-color: white;
-            padding: 15px 20px;
-            border-radius: 10px;
-            border: 1px solid #303F9F;
-        }
-    }
-    button{
-        
-        border: none;
-        border-radius: 5px;
-        padding: 15px;
-        background-color: #303F9F;
-        color: white;
-    }
-}
+
 .pricing{
     margin-top: 15px;
     display:flex;

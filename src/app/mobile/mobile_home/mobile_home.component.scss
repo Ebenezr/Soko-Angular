@@ -1,5 +1,17 @@
 .myContent{
     padding: 10px;
+    background-color: #f6f1ee;
+    height: 80vh;
+   
+    .footer{
+        // padding: 20px;
+        // border: 1px solid red;
+        // position: absolute;
+        // bottom: 0;
+        margin-top: 15px;
+       
+        
+    }
 }
 
 
@@ -7,10 +19,7 @@
     margin-bottom: 50px;
 }
 
-.footer{
-    margin-top: 15px;
-    
-}
+
 .buy{
     padding: 20px;
     display: flex;

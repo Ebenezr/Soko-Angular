@@ -1,11 +1,16 @@
 .Cat-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    overflow: hidden;
+    overflow-x: scroll;
+    justify-content: space-between;
+    width: 100%;
+ 
+    
     
     
     .cat-card{
-        background-color: #fafafa ;
+        background-color: #f6f1ee ;
         border: none;
         display:flex;
         flex-direction: column;
@@ -29,22 +34,6 @@
             width: 80px;
             margin-bottom: 10px;
         }
-       
-        // .first-image {
-        //     border: 3px solid red;
-        //     background-image: url('../../../assets/images/oils.png');
-        //     background-size: cover;
-        // }
-        // .second-image {
-        //     background-image: url('../../../assets/images/noodles.png');
-        //     background-size: cover;
-        // }
-        // .third-image {
-        //     background-image: url('../../../assets/images/toss.png');
-        //     background-size: cover;
-        // }
-        
-
     }
     
 
