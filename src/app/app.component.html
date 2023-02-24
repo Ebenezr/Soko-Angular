@@ -3,12 +3,22 @@
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
         [mode]="(isHandset$ | async) ? 'over' : 'side'"
         [opened]="(isHandset$ | async) === false">
-      <mat-toolbar>Menu</mat-toolbar>
+      <mat-toolbar>
+        <div class="imageContainer">
+          <img mat-card-image [src]="imagePath5">
+        </div>
+      </mat-toolbar>
+      
       <mat-nav-list>
         <a mat-list-item href="#">Home</a>
         <a mat-list-item href="/mobile/products">Products</a>
         <a mat-list-item href="/about">About</a>
       </mat-nav-list>
+      <mat-toolbar>
+        <div class="imageContainer">
+          <img mat-card-image [src]="imagePath6">
+        </div>
+      </mat-toolbar>
     </mat-sidenav>
     <mat-sidenav-content>
         <mat-toolbar style="background-color: #f6f1ee;">

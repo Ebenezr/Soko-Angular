@@ -3,11 +3,18 @@
   }
   
   .sidenav {
+    background-color: rgb(114, 152, 175);
     width: 200px;
+
   }
   
   .sidenav .mat-toolbar {
+    padding: 30px;
+    height: 50px;
+    
     background: inherit;
+    border: 1px solid #f6f1ee;
+   
   }
   
   .mat-toolbar.mat-primary {

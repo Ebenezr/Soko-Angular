@@ -10,6 +10,7 @@ import { Observable, map, shareReplay } from 'rxjs';
 export class AppComponent implements OnInit {
   public isHandset$: Observable<boolean>;
   public imagePath5 = '../../../assets/images/kapa-logo.png';
+  public imagePath6 = '../../../assets/images/OTMlogo.png';
   title = 'soko';
   constructor(private breakpointObserver: BreakpointObserver) {
     this.isHandset$=this.breakpointObserver.observe(Breakpoints.Handset)
