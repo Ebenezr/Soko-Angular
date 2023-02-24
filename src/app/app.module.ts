@@ -18,11 +18,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { MainfooterComponent } from './mainfooter/mainfooter.component';
 
 
 @NgModule({
     declarations: [
         AppComponent,
+        MainfooterComponent,
         
     ],
     providers: [],

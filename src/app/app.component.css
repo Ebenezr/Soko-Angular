@@ -16,18 +16,27 @@
     z-index: 1;
   }
  
-  .myContent{
-    padding: 20px;
-
-  }
- 
-  
   .company {
-    height: 180px;
-
-  
+    height: 180px; 
   }
   img{
     height: 100%;
     width: 100%;
   }
+  .mat-sidenav-content {
+    background-color: #f6f1ee;   
+    position: relative;
+    height: 100vh;
+  }
+
+  .content{
+    overflow-y: auto; /* enable scrolling for content */
+    height: 81vh;
+  }
+  .footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  

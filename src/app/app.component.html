@@ -23,10 +23,14 @@
             <span class="mine">
               <div class="company"><img mat-card-image [src]="imagePath5"></div>
             </span>
-          </mat-toolbar>
-        <router-outlet> </router-outlet>
-
-     
+        </mat-toolbar>
+        <div class="content">
+          <router-outlet></router-outlet>
+        </div>
+       
+        <div class="footer">
+          <app-mainfooter></app-mainfooter>
+        </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
   
