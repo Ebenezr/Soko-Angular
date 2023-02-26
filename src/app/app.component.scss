@@ -3,10 +3,10 @@
   }
   
   .sidenav {
-    background-color: rgb(114, 152, 175);
     width: 200px;
 
   }
+ 
   
   .sidenav .mat-toolbar {
     padding: 30px;
@@ -46,4 +46,24 @@
     right: 0;
     bottom: 0;
   }
-  
+  .otm{
+    padding-top: 200px;
+    margin: auto;
+    height: 80px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #prod{
+    font-style: italic;
+    color: blue;
+    padding: 10px;
+  }
+  .nav-list{
+    background-color: aquamarine;
+    mat-icon{
+      margin-right: 5px;
+    }
+  }
