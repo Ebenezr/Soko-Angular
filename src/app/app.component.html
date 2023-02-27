@@ -10,19 +10,20 @@
       </mat-toolbar>
       
       <mat-nav-list class="nav-list">
-        <a mat-list-item href="#"> <mat-icon>receipt_long</mat-icon>Orders</a>
-        <a mat-list-item href="/mobile/terms"><mat-icon>description</mat-icon>Terms & Conditions</a>
-        <a mat-list-item href="/about"><mat-icon>info</mat-icon>About Us</a>
+        <a id="anchor" mat-list-item href="#"> <mat-icon>restore</mat-icon>Orders</a>
+        <a id="anchor" mat-list-item href="/mobile/terms"><mat-icon>receipt</mat-icon>Terms & Conditions</a>
+        <a id="anchor" mat-list-item href="/about"><mat-icon>help_outline</mat-icon>About Us</a>
+        
       </mat-nav-list>
       
-        <div class="otm">
-          <span id="prod">Powered By:</span>
-          <img mat-card-image [src]="imagePath6">
-        </div>
+      <div class="otm">
+        <span id="prod">Powered By</span>
+        <img mat-card-image [src]="imagePath6">
+      </div>
       
     </mat-sidenav>
     <mat-sidenav-content>
-        <mat-toolbar style="background-color: #f6f1ee;">
+        <mat-toolbar  class="topNav" style="background-color: #f6f1ee;">
             <button
               type="button"
               aria-label="Toggle sidenav"
@@ -31,9 +32,10 @@
               *ngIf="isHandset$ | async">
               <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
-            <span class="mine">
-              <div class="company"><img mat-card-image [src]="imagePath5"></div>
-            </span>
+            
+            <div class="company"><img mat-card-image [src]="imagePath8"></div>
+              
+            
         </mat-toolbar>
         <div class="content">
           <router-outlet></router-outlet>

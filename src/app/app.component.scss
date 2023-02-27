@@ -4,16 +4,17 @@
   
   .sidenav {
     width: 200px;
+   
+    
 
   }
  
   
   .sidenav .mat-toolbar {
-    padding: 30px;
+    padding: 20px;
     height: 50px;
-    
-    background: inherit;
-    border: 1px solid #f6f1ee;
+    margin-top: 20px;
+ 
    
   }
   
@@ -21,10 +22,20 @@
     position: sticky;
     top: 0;
     z-index: 1;
+   
+    
+  }
+  .topNav{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
   }
  
   .company {
-    height: 180px; 
+    margin: 0 auto; 
+    height: 70px;
+    width: 40%;
   }
   img{
     height: 100%;
@@ -32,6 +43,7 @@
   }
   .mat-sidenav-content {
     background-color: #f6f1ee;   
+    // background-color: #e2e5e7;  
     position: relative;
     height: 100vh;
   }
@@ -47,7 +59,7 @@
     bottom: 0;
   }
   .otm{
-    padding-top: 200px;
+    padding-top: 400px;
     margin: auto;
     height: 80px;
     width: 150px;
@@ -58,12 +70,21 @@
   }
   #prod{
     font-style: italic;
-    color: blue;
+    color: #4074ba;
     padding: 10px;
   }
   .nav-list{
-    background-color: aquamarine;
+    
+    #anchor{
+     
+      color: #575a5e;
+      margin-bottom: 20px;
+    }
+    
     mat-icon{
-      margin-right: 5px;
+     
+      margin-right: 10px;
+      color: #575a5e; 
+      
     }
   }

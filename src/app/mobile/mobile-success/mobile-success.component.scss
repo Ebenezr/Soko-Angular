@@ -1,11 +1,11 @@
 .succes{
     margin: 0 auto;
     width: 80%;
-    height: 100vh;
+ 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-top: 30px;
+    margin-top: 30px;
+
     img{
         height: 280px;
         width: 100%;
@@ -26,7 +26,7 @@
         }
     }
     .new-order{
-        flex: end;
+        padding-top: 100px;
         width: 60%;
         margin:  auto;
         button{

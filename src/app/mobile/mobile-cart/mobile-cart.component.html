@@ -11,63 +11,95 @@
         <div class="cart-item">
             <mat-checkbox></mat-checkbox>
             <mat-card class="cart-card">
-                <img mat-card-image [src]="imagePath1" alt="Noodles">
-                <mat-card-content>
-                    <mat-card-title>Rhapso</mat-card-title>
-                    <p>Size: 5LTR</p>
-                    <p> Ksh 500.00</p>
-                </mat-card-content>
-                <mat-icon>close</mat-icon>
+                <div class="headerContainer">
+                    <img mat-card-image [src]="imagePath1" alt="Noodles">
+                    <mat-card-content>
+                        <mat-card-title>Rhapso</mat-card-title>
+                        <p>Size: 5LTR</p>
+                        <p>Quantity: </p>
+                    </mat-card-content>
+                    <mat-icon>close</mat-icon>
+                </div>
+                <div class="footerContainer">
+                    <div class="cardFooter">
+                        <span id="titlE">Unit Price</span>
+                        <span id="titlE">Total Amount</span>
+                    </div>
+                    <div class="cardFooter">
+                        <span>KES 700</span>
+                        <span>KES 1400</span>
+                    </div>
+                </div>
             </mat-card>
-            
         </div>
     
         <div class="cart-item">
             <mat-checkbox></mat-checkbox>
             <mat-card class="cart-card">
-                <img mat-card-image [src]="imagePath2" alt="Noodles">
-                <mat-card-content>
-                    <mat-card-title>Rhapso</mat-card-title>
-                    <p>Size: 5LTR</p>
-                    <p> Ksh 500.00</p>
-                </mat-card-content>
-                <mat-icon>close</mat-icon>
+                <div class="headerContainer">
+                    <img mat-card-image [src]="imagePath2" alt="Noodles">
+                    <mat-card-content>
+                        <mat-card-title>Noodles</mat-card-title>
+                        <p>Size: 5LTR</p>
+                        <p>Quantity: </p>
+                    </mat-card-content>
+                    <mat-icon>close</mat-icon>
+                </div>
+                <div class="footerContainer">
+                    <div class="cardFooter">
+                        <span id="titlE">Unit Price</span>
+                        <span id="titlE">Total Amount</span>
+                    </div>
+                    <div class="cardFooter">
+                        <span>KES 700</span>
+                        <span>KES 1400</span>
+                    </div>
+                </div>
             </mat-card>
-            
         </div>
         <div class="cart-item">
             <mat-checkbox></mat-checkbox>
             <mat-card class="cart-card">
-                <img mat-card-image [src]="imagePath3" alt="Noodles">
-                <mat-card-content>
-                    <mat-card-title>Toss</mat-card-title>
-                    <p>Size: 5LTR</p>
-                    <p> Ksh 500.00</p>
-                </mat-card-content>
-                <mat-icon>close</mat-icon>
+                <div class="headerContainer">
+                    <img mat-card-image [src]="imagePath3" alt="Noodles">
+                    <mat-card-content>
+                        <mat-card-title>Toss</mat-card-title>
+                        <p>Size: 5LTR</p>
+                        <p>Quantity: </p>
+                    </mat-card-content>
+                    <mat-icon>close</mat-icon>
+                </div>
+                <div class="footerContainer">
+                    <div class="cardFooter">
+                        <span id="titlE">Unit Price</span>
+                        <span id="titlE">Total Amount</span>
+                    </div>
+                    <div class="cardFooter">
+                        <span>KES 700</span>
+                        <span>KES 1400</span>
+                    </div>
+                </div>
             </mat-card>
-            
         </div>
     </div>
     
     
-    
     <div class="pricing">
-        <div class="sub-price">
-            <p>Sub Total</p>
-            <h4>Kes 476</h4>
+        <div class="price-heading">
+            <span>Sub Total</span>
+            <span>VAT</span>
         </div>
-        <div class="sub-price">
-            <p>VAT</p>
-            <h4>Kes 7.6</h4>
+        <div class="price">
+            <span>Kes 476</span>
+            <span>Kes 7.6</span>
         </div>
     </div>
     
     
     <div class="checkout">
         <div class="price-checkout">
-            <p>Total:</p>
-            <h4>KES 480</h4>
+            <span>Total</span>
+            <span>KES 480</span>
         </div>
         <div class="btn-checkout">
             <button>Proceed to Checkout</button>
